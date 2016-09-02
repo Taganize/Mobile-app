@@ -1,0 +1,18 @@
+<ion-view title="Sign In" hide-back-button="true" class=" ">
+    <ion-content padding="true" class="has-header">
+        <form id="signup-form1" class="list ">
+            <ion-list id="signup-list1" class=" ">
+                <label class="item item-input item-stacked-label " id="signup-input2">
+                    <span class="input-label">Email</span>
+                    <input ng-model='userData.email' type="email" placeholder="me@mail.com">
+                </label>
+                <label class="item item-input item-stacked-label " id="signup-input2">
+                    <span class="input-label">Password</span>
+                    <input ng-model='userData.password' type="password" placeholder="Password">
+                </label>
+            </ion-list>
+            <button ng-click="signInBtn()" id="signup-button3" class=" button button-stable  button-block button-calm ">Login</button>
+            <a ui-sref="signup" class=" button button-block button-calm">Create new account</a>
+        </form>
+    </ion-content>
+</ion-view>

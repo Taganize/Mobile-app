@@ -1,0 +1,53 @@
+<ion-view title="Sign Up" class=" ">
+    <ion-content padding="true" class="has-header">
+        <form id="signup-form1" class="list ">
+            <ion-list id="signup-list1" class=" ">
+                <label class="item item-input item-stacked-label " id="signup-input1">
+                    <span class="input-label">Full Name</span>
+                    <input ng-model='userData.name' type="text" placeholder="John Cena">
+                </label>
+                <label class="item item-input item-stacked-label " id="signup-input2">
+                    <span class="input-label">Email</span>
+                    <input ng-model='userData.email' type="email" placeholder="me@mail.com">
+                </label>
+                <label class="item item-select " id="signup-select1">
+                    <span class="input-label">Gender</span>
+                    <select ng-model='userData.gender'>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label class="item item-select ">
+                    <span class="input-label">Address</span>
+                    <input  ng-model='userData.address' type="text" placeholder="My street name 14, 51">
+                </label>
+                <label class="item item-select ">
+                    <span class="input-label">City</span>
+                    <input  ng-model='userData.city' type="text" placeholder="Helsinki">
+                </label>
+                <label class="item item-select">
+                    <span class="input-label">ZIP-code</span>
+                    <input  ng-model='userData.zip' type="text" placeholder="01234">
+                </label>
+                <label class="item item-select ">
+                    <span class="input-label">State/Province</span>
+                    <input  ng-model='userData.state' type="text" placeholder="Uusimaa">
+                </label>
+                <label class="item item-input item-stacked-label " id="signup-input13">
+                    <span class="input-label">Birthday</span>
+                    <input  ng-model='userData.birthday' type="date" placeholder="">
+                </label>
+                <label class="item item-input item-stacked-label " id="signup-input13">
+                    <span class="input-label">Phone number</span>
+                    <input ng-model='userData.phone' type="tel" placeholder="">
+                </label>
+            </ion-list>
+            <p id="signup-markdown1" style="color:#000000;" class=" ">By clicking one of these buttons you agree with our
+                <a ui-sref="termsOfUse"><strong>Terms of use</strong></a>
+            </p>
+            <button ng-click="signUpBtn()" id="signup-button3" class=" button button-calm  button-block ">Sign up</button>
+            <a ui-sref="signin" class=" button button-block button-calm ">Sign in to an existing account</a>
+        </form>
+    </ion-content>
+</ion-view>
